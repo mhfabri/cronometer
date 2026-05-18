@@ -1,0 +1,7 @@
+.apresentacao{
+    max-width: 800px;
+    border: 1px solid black;
+    margin-top: 10rem;
+    border-radius: 10px;
+    text-align: center;
+}

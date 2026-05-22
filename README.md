@@ -108,7 +108,7 @@ O jogo irá mostrar:
 
 ---
 
-# ⭐ Sistema de Pontuação
+# Sistema de Pontuação
 
 | Diferença | Pontos |
 | --------- | ------ |

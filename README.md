@@ -1,44 +1,44 @@
 
-# 🎯 Acerte o Tempo
+# Acerte o Tempo
 
 Um jogo web interativo onde o jogador precisa parar um cronômetro invisível exatamente no tempo indicado na tela.  
 O objetivo é testar sua percepção temporal e precisão.
 
 ---
 
-## 📸 Preview do Projeto
+## Preview do Projeto
 
 O jogador recebe um tempo-alvo aleatório e deve clicar em **PARAR** tentando acertar o tempo exato, mesmo sem enxergar o cronômetro em execução.
 
 ### Funcionalidades:
-- ⏱️ Cronômetro invisível
-- 🎯 Tempo-alvo aleatório
-- ⭐ Sistema de pontuação
-- 📋 Histórico de rodadas
-- 🎚️ Sistema de dificuldade
-- 📱 Layout responsivo
-- ✨ Interface moderna com efeitos visuais
+- Cronômetro invisível
+- Tempo-alvo aleatório
+- Sistema de pontuação
+- Histórico de rodadas
+- Sistema de dificuldade
+- Layout responsivo
+- Interface moderna com efeitos visuais
 
 ---
 
-# 📁 Estrutura do Projeto
+# Estrutura do Projeto
 
 ```bash
-📦 acerte-o-tempo
- ┣ 📄 index.html
- ┣ 📄 main.css
- ┣ 📄 main.js
- ┗ 📄 README.md
+ acerte-o-tempo
+ ┣ index.html
+ ┣ main.css
+ ┣ main.js
+ ┗ README.md
 ````
 
 ---
 
-# 🚀 Como Executar
+# Como Executar
 
 ## 1. Baixe ou clone o projeto
 
 ```bash
-git clone https://github.com/seu-usuario/acerte-o-tempo.git
+git clone https://github.com/mhfabri/cronometer.git
 ```
 
 ou apenas baixe os arquivos manualmente.
@@ -53,11 +53,11 @@ Basta abrir o arquivo:
 index.html
 ```
 
-em qualquer navegador moderno.
+Index.html é o arquivo principal da interface do jogo, feito para vizualização dos conteudos visuais e UI junto do main.css para estilização.
 
 ---
 
-# 🛠️ Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 * HTML5
 * CSS3
@@ -65,7 +65,7 @@ em qualquer navegador moderno.
 
 ---
 
-# 🎮 Como Jogar
+# Como Jogar
 
 ## Objetivo
 
@@ -121,7 +121,7 @@ O jogo irá mostrar:
 
 ---
 
-# 📋 Histórico de Rodadas
+# Histórico de Rodadas
 
 O jogo salva automaticamente:
 
@@ -135,7 +135,7 @@ O histórico é limitado às últimas 30 rodadas.
 
 ---
 
-# 🧠 Lógica do Projeto
+# Lógica do Projeto
 
 ## Geração do tempo-alvo
 
@@ -170,7 +170,7 @@ const diff = Math.abs(stoppedValue - targetTime);
 
 ---
 
-# 🎨 Interface
+# Interface
 
 O projeto utiliza:
 
@@ -182,7 +182,7 @@ O projeto utiliza:
 
 ---
 
-# 📱 Responsividade
+# Responsividade
 
 O layout foi adaptado para:
 
@@ -192,23 +192,23 @@ O layout foi adaptado para:
 
 ---
 
-# 🔮 Melhorias Futuras
+# Melhorias Futuras
 
 Sugestões para evolução do projeto:
 
-* 🏆 Ranking online
-* 👥 Multiplayer
-* 🔊 Sons e efeitos
-* 🎵 Música de fundo
-* 🌎 Sistema de login
-* 📈 Estatísticas avançadas
-* 💾 Salvamento local com LocalStorage
-* 🎨 Temas personalizados
-* ⌨️ Atalhos de teclado
+* Ranking online
+* Multiplayer
+* Sons e efeitos
+* Música de fundo
+* Sistema de login
+* Estatísticas avançadas
+* Salvamento local com LocalStorage
+* Temas personalizados
+* Atalhos de teclado
 
 ---
 
-# 🐞 Possíveis Melhorias Técnicas
+# Possíveis Melhorias Técnicas
 
 ## Melhor precisão do cronômetro
 
@@ -226,7 +226,7 @@ performance.now()
 
 ---
 
-# 📚 Conceitos Aplicados
+# Conceitos Aplicados
 
 Este projeto trabalha conceitos importantes de:
 
@@ -240,7 +240,7 @@ Este projeto trabalha conceitos importantes de:
 
 ---
 
-# 👨‍💻 Autor
+# Autor
 
 Projeto desenvolvido por Matheus Fabri, Yasmin Carvalho, Robson Cardoso, Maria Eduarda, Matheus Torres e Arthur Franco.
 

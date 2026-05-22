@@ -329,6 +329,11 @@ footer {
     box-shadow: 0 0 10px #ffb347;
 }
 
+.footera{
+    text-decoration: underline;
+    color: #5f7e92;
+}
+
 @media (max-width: 550px) {
     .game-panel {
         padding: 20px 16px;

@@ -1,4 +1,4 @@
-````md
+
 # 🎯 Acerte o Tempo
 
 Um jogo web interativo onde o jogador precisa parar um cronômetro invisível exatamente no tempo indicado na tela.  

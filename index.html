@@ -1,29 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>choose conometer</title>
-    <!-- css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Acerte o time</title>
     <link rel="stylesheet" href="main.css">
-    <!-- javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+
 </head>
+
 <body>
+    <div class="game-container">
+        <div class="game-panel">
+            <h1>🎯 ACERTE O TEMPO</h1>
+            <div class="sub">⏱️ Cronômetro invisível • Pare no momento exato!</div>
 
-    <main>
+            <div class="level-buttons">
+                <button class="level-btn" data-min="3" data-max="8">Fácil<br>3s-8s</button>
+                <button class="level-btn active" data-min="8" data-max="15">Médio<br>8s-15s</button>
+                <button class="level-btn" data-min="15" data-max="25">Difícil<br>15s-25s</button>
+                <button class="level-btn" data-min="25" data-max="40">Especialista<br>25s-40s</button>
+            </div>
 
-        <div class="apresentacao container">
-            <h1>Descubra o tempo!</h1>
-            <small>Trabalho de IW² - Montando um jogo usando JS</small>
-            <p>o jogo consiste em você tentar acertar o tempo certo que aparecer na sua tela clicando no botao "start"</p>
+            <div class="target-display">
+                <div class="target-label">🎯 TEMPO PARA ACERTAR</div>
+                <div class="target-value" id="targetTimeDisplay">0.00 <span class="target-unit">segundos</span></div>
+            </div>
 
+            <div class="timer-area" id="timerArea">
+                <div class="timer-digits" id="timerDisplay">0.00</div>
+                <div class="timer-label">⏳ cronômetro oculto • confie na sua percepção ⏳</div>
+            </div>
+
+            <div class="action-buttons">
+                <button id="startBtn">🎬 COMEÇAR</button>
+                <button id="stopBtn" disabled>🛑 PARAR</button>
+            </div>
+
+            <div class="result-panel">
+                <div class="info-row">
+                    <span class="info-label">⏱️ Seu tempo (ao parar):</span>
+                    <span class="info-value" id="stoppedTimeSpan">—</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">📊 Diferença:</span>
+                    <span class="info-value" id="diffSpan">—</span>
+                </div>
+                <div class="round-score" id="roundScoreSpan">
+                    🏆 Pontos nesta rodada: —
+                </div>
+                <div class="info-row" style="border-bottom: none;">
+                    <span class="info-label">⭐ Pontuação TOTAL:</span>
+                    <span class="info-value" id="totalScoreSpan">0</span>
+                </div>
+            </div>
+
+            <!-- SEÇÃO DE HISTÓRICO DE RODADAS -->
+            <div class="history-section">
+                <div class="history-title">
+                    📋 HISTÓRICO DE RODADAS
+                    <button id="clearHistoryBtn"
+                        style="background:#3a4a58; padding:4px 12px; font-size:0.7rem; box-shadow:none;">Limpar</button>
+                </div>
+                <div class="history-list" id="historyList">
+                    <div class="empty-history">Nenhuma rodada completada ainda. Clique em COMEÇAR e depois PARAR!</div>
+                </div>
+            </div>
+            <footer>✦ O tempo alvo está na tela • O CRONÔMETRO fica INVISÍVEL • Use sua memória temporal! ✦</footer>
         </div>
-
-    </main>
-
-
+    </div>
+<script src="main.js"></script>
 </body>
+
 </html>

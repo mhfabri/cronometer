@@ -23,7 +23,7 @@
     
     // Histórico de rodadas
     let history = []; // cada entry: { round, target, stopped, diff, points }
-    let roundCounter = 1;
+    let roundCounter = 2;
     
     // Configuração de dificuldade
     let currentMin = 8;
@@ -211,7 +211,7 @@
         roundFinished = false;
         
         totalScore = 0;
-        roundCounter = 1;
+        roundCounter = 0;
         totalScoreSpan.textContent = '0';
         
         // Limpa histórico
@@ -241,7 +241,6 @@
         isRunning = false;
         
         if (roundFinished) {
-            roundCounter++;
             roundFinished = false;
         }
         
@@ -282,7 +281,6 @@
     startBtn.addEventListener('click', () => {
         if (isRunning) return;
         if (roundFinished) {
-            roundCounter++;
             roundFinished = false;
         }
         startNewRound();
